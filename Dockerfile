@@ -23,7 +23,6 @@ ENV ROUTEROS_PATH="https://download.mikrotik.com/routeros/$ROUTEROS_VERSION/$ROU
 WORKDIR /routeros
 
 RUN mkdir /routeros/bin
-COPY ./images/${ROUTEROS_IMAGE} /routeros/${ROUTEROS_IMAGE}
 COPY ./bin/* /routeros/bin/
 RUN ls -l /routeros/bin
 RUN ip link show
