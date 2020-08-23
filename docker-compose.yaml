@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    routeros:
+        container_name: "docker-routeros-test"
+        image: kilip/routeros:6.47.1
+        privileged: true
+        ports: 
+            - "8291:8291"
+            - "8729:8729"
+            - "8728:8728"
+            - "2222:22"
+        cap_add: 
+            - NET_ADMIN
+        devices: 
+            - /dev/net/tun
