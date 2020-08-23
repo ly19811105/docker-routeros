@@ -16,7 +16,7 @@ RUN set -xe \
         curl
 
 # Environments which may be change
-ENV ROUTEROS_VERSION="6.47.2"
+ENV ROUTEROS_VERSION="6.47.1"
 ENV ROUTEROS_IMAGE="chr-${ROUTEROS_VERSION}.vdi"
 ENV ROUTEROS_URL="https://download.mikrotik.com/routeros/${ROUTEROS_VERSION}/${ROUTEROS_IMAGE}"
 
